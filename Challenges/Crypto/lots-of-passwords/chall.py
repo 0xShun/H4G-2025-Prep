@@ -1,4 +1,4 @@
-def g_key(msg, key):
+    def g_key(msg, key):
     # Convert the key to a list to allow for modification
     key = list(key)
     # If the message and key are the same length, return the key as is
