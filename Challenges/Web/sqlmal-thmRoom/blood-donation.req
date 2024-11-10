@@ -1,0 +1,16 @@
+POST /blood/nl-search.php HTTP/1.1
+Host: 10.10.174.81
+Content-Length: 16
+Cache-Control: max-age=0
+Accept-Language: en-US
+Upgrade-Insecure-Requests: 1
+Origin: http://10.10.174.81
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://10.10.174.81/blood/
+Accept-Encoding: gzip, deflate, br
+Cookie: PHPSESSID=d43rfjn8umr4vm7s1e65ipo0p5
+Connection: keep-alive
+
+blood_group=A%2B

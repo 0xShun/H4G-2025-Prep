@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Sun Nov 10 23:29:46 2024 as: nmap -sC -sV -oA nmap -p 1883 10.10.16.64
+Host: 10.10.16.64 ()	Status: Up
+Host: 10.10.16.64 ()	Ports: 1883/open/tcp//mosquitto version 2.0.14///
+# Nmap done at Sun Nov 10 23:30:02 2024 -- 1 IP address (1 host up) scanned in 15.96 seconds

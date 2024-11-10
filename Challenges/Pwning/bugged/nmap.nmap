@@ -1,0 +1,54 @@
+# Nmap 7.93 scan initiated Sun Nov 10 23:29:46 2024 as: nmap -sC -sV -oA nmap -p 1883 10.10.16.64
+Nmap scan report for 10.10.16.64
+Host is up (0.33s latency).
+
+PORT     STATE SERVICE                  VERSION
+1883/tcp open  mosquitto version 2.0.14
+| mqtt-subscribe: 
+|   Topics and their most recent payloads: 
+|     $SYS/broker/publish/bytes/sent: 423
+|     $SYS/broker/load/publish/sent/15min: 1.92
+|     $SYS/broker/load/bytes/sent/5min: 599.92
+|     $SYS/broker/store/messages/count: 36
+|     $SYS/broker/bytes/received: 80571
+|     $SYS/broker/clients/active: 2
+|     $SYS/broker/version: mosquitto version 2.0.14
+|     $SYS/broker/clients/maximum: 2
+|     $SYS/broker/messages/received: 1707
+|     $SYS/broker/load/publish/sent/1min: 26.50
+|     $SYS/broker/load/connections/1min: 1.83
+|     $SYS/broker/clients/total: 2
+|     $SYS/broker/load/sockets/15min: 0.26
+|     $SYS/broker/messages/stored: 36
+|     $SYS/broker/publish/bytes/received: 57413
+|     $SYS/broker/load/bytes/sent/1min: 1517.47
+|     $SYS/broker/retained messages/count: 36
+|     patio/lights: {"id":193199254967310358,"color":"BLUE","status":"ON"}
+|     $SYS/broker/load/messages/sent/1min: 120.11
+|     $SYS/broker/load/messages/received/1min: 93.61
+|     $SYS/broker/load/publish/sent/5min: 5.69
+|     $SYS/broker/load/sockets/1min: 2.74
+|     $SYS/broker/subscriptions/count: 3
+|     $SYS/broker/store/messages/bytes: 274
+|     $SYS/broker/clients/connected: 2
+|     $SYS/broker/publish/messages/sent: 57
+|     $SYS/broker/load/bytes/received/15min: 3053.18
+|     $SYS/broker/load/messages/received/5min: 88.56
+|     $SYS/broker/bytes/sent: 9324
+|     $SYS/broker/messages/sent: 1763
+|     $SYS/broker/load/bytes/received/5min: 4179.25
+|     $SYS/broker/load/connections/5min: 0.40
+|     $SYS/broker/load/connections/15min: 0.15
+|     $SYS/broker/load/messages/sent/15min: 66.63
+|     $SYS/broker/uptime: 1133 seconds
+|     storage/thermostat: {"id":9524645190627995125,"temperature":23.027508}
+|     $SYS/broker/load/bytes/received/1min: 4450.60
+|     $SYS/broker/load/messages/sent/5min: 94.26
+|     $SYS/broker/load/messages/received/15min: 64.70
+|     $SYS/broker/load/bytes/sent/15min: 341.73
+|     $SYS/broker/load/sockets/5min: 0.61
+|     livingroom/speaker: {"id":15291989500495453678,"gain":40}
+|_    kitchen/toaster: {"id":12274942204326656206,"in_use":true,"temperature":140.95982,"toast_time":327}
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov 10 23:30:02 2024 -- 1 IP address (1 host up) scanned in 15.96 seconds

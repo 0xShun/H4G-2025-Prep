@@ -1,0 +1,21 @@
+===============================================================
+Gobuster v3.5
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.174.81
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/kali-wordlists/dirbuster/directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.5
+[+] Timeout:                 10s
+===============================================================
+2024/11/09 06:28:27 Starting gobuster in directory enumeration mode
+===============================================================
+[2K/blood                (Status: 301) [Size: 194] [--> http://10.10.174.81/blood/]
+
+[!] Keyboard interrupt detected, terminating.
+
+===============================================================
+2024/11/09 07:17:36 Finished
+===============================================================

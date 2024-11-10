@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sun Nov 10 23:29:46 2024 as: nmap -sC -sV -oA nmap -p 1883 10.10.16.64 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -oA nmap -p 1883 10.10.16.64" start="1731252586" startstr="Sun Nov 10 23:29:46 2024" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="1883"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.16.64" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1731252588" endtime="1731252602"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.10.16.64" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="1883"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mosquitto version 2.0.14" method="probed" conf="10"/><script id="mqtt-subscribe" output="&#xa;  Topics and their most recent payloads: &#xa;    $SYS/broker/publish/bytes/sent: 423&#xa;    $SYS/broker/load/publish/sent/15min: 1.92&#xa;    $SYS/broker/load/bytes/sent/5min: 599.92&#xa;    $SYS/broker/store/messages/count: 36&#xa;    $SYS/broker/bytes/received: 80571&#xa;    $SYS/broker/clients/active: 2&#xa;    $SYS/broker/version: mosquitto version 2.0.14&#xa;    $SYS/broker/clients/maximum: 2&#xa;    $SYS/broker/messages/received: 1707&#xa;    $SYS/broker/load/publish/sent/1min: 26.50&#xa;    $SYS/broker/load/connections/1min: 1.83&#xa;    $SYS/broker/clients/total: 2&#xa;    $SYS/broker/load/sockets/15min: 0.26&#xa;    $SYS/broker/messages/stored: 36&#xa;    $SYS/broker/publish/bytes/received: 57413&#xa;    $SYS/broker/load/bytes/sent/1min: 1517.47&#xa;    $SYS/broker/retained messages/count: 36&#xa;    patio/lights: {&quot;id&quot;:193199254967310358,&quot;color&quot;:&quot;BLUE&quot;,&quot;status&quot;:&quot;ON&quot;}&#xa;    $SYS/broker/load/messages/sent/1min: 120.11&#xa;    $SYS/broker/load/messages/received/1min: 93.61&#xa;    $SYS/broker/load/publish/sent/5min: 5.69&#xa;    $SYS/broker/load/sockets/1min: 2.74&#xa;    $SYS/broker/subscriptions/count: 3&#xa;    $SYS/broker/store/messages/bytes: 274&#xa;    $SYS/broker/clients/connected: 2&#xa;    $SYS/broker/publish/messages/sent: 57&#xa;    $SYS/broker/load/bytes/received/15min: 3053.18&#xa;    $SYS/broker/load/messages/received/5min: 88.56&#xa;    $SYS/broker/bytes/sent: 9324&#xa;    $SYS/broker/messages/sent: 1763&#xa;    $SYS/broker/load/bytes/received/5min: 4179.25&#xa;    $SYS/broker/load/connections/5min: 0.40&#xa;    $SYS/broker/load/connections/15min: 0.15&#xa;    $SYS/broker/load/messages/sent/15min: 66.63&#xa;    $SYS/broker/uptime: 1133 seconds&#xa;    storage/thermostat: {&quot;id&quot;:9524645190627995125,&quot;temperature&quot;:23.027508}&#xa;    $SYS/broker/load/bytes/received/1min: 4450.60&#xa;    $SYS/broker/load/messages/sent/5min: 94.26&#xa;    $SYS/broker/load/messages/received/15min: 64.70&#xa;    $SYS/broker/load/bytes/sent/15min: 341.73&#xa;    $SYS/broker/load/sockets/5min: 0.61&#xa;    livingroom/speaker: {&quot;id&quot;:15291989500495453678,&quot;gain&quot;:40}&#xa;    kitchen/toaster: {&quot;id&quot;:12274942204326656206,&quot;in_use&quot;:true,&quot;temperature&quot;:140.95982,&quot;toast_time&quot;:327}"><table key="Topics and their most recent payloads">
+<elem key="$SYS/broker/publish/bytes/sent">423</elem>
+<elem key="$SYS/broker/load/publish/sent/15min">1.92</elem>
+<elem key="$SYS/broker/load/bytes/sent/5min">599.92</elem>
+<elem key="$SYS/broker/store/messages/count">36</elem>
+<elem key="$SYS/broker/bytes/received">80571</elem>
+<elem key="$SYS/broker/clients/active">2</elem>
+<elem key="$SYS/broker/version">mosquitto version 2.0.14</elem>
+<elem key="$SYS/broker/clients/maximum">2</elem>
+<elem key="$SYS/broker/messages/received">1707</elem>
+<elem key="$SYS/broker/load/publish/sent/1min">26.50</elem>
+<elem key="$SYS/broker/load/connections/1min">1.83</elem>
+<elem key="$SYS/broker/clients/total">2</elem>
+<elem key="$SYS/broker/load/sockets/15min">0.26</elem>
+<elem key="$SYS/broker/messages/stored">36</elem>
+<elem key="$SYS/broker/publish/bytes/received">57413</elem>
+<elem key="$SYS/broker/load/bytes/sent/1min">1517.47</elem>
+<elem key="$SYS/broker/retained messages/count">36</elem>
+<elem key="patio/lights">{&quot;id&quot;:193199254967310358,&quot;color&quot;:&quot;BLUE&quot;,&quot;status&quot;:&quot;ON&quot;}</elem>
+<elem key="$SYS/broker/load/messages/sent/1min">120.11</elem>
+<elem key="$SYS/broker/load/messages/received/1min">93.61</elem>
+<elem key="$SYS/broker/load/publish/sent/5min">5.69</elem>
+<elem key="$SYS/broker/load/sockets/1min">2.74</elem>
+<elem key="$SYS/broker/subscriptions/count">3</elem>
+<elem key="$SYS/broker/store/messages/bytes">274</elem>
+<elem key="$SYS/broker/clients/connected">2</elem>
+<elem key="$SYS/broker/publish/messages/sent">57</elem>
+<elem key="$SYS/broker/load/bytes/received/15min">3053.18</elem>
+<elem key="$SYS/broker/load/messages/received/5min">88.56</elem>
+<elem key="$SYS/broker/bytes/sent">9324</elem>
+<elem key="$SYS/broker/messages/sent">1763</elem>
+<elem key="$SYS/broker/load/bytes/received/5min">4179.25</elem>
+<elem key="$SYS/broker/load/connections/5min">0.40</elem>
+<elem key="$SYS/broker/load/connections/15min">0.15</elem>
+<elem key="$SYS/broker/load/messages/sent/15min">66.63</elem>
+<elem key="$SYS/broker/uptime">1133 seconds</elem>
+<elem key="storage/thermostat">{&quot;id&quot;:9524645190627995125,&quot;temperature&quot;:23.027508}</elem>
+<elem key="$SYS/broker/load/bytes/received/1min">4450.60</elem>
+<elem key="$SYS/broker/load/messages/sent/5min">94.26</elem>
+<elem key="$SYS/broker/load/messages/received/15min">64.70</elem>
+<elem key="$SYS/broker/load/bytes/sent/15min">341.73</elem>
+<elem key="$SYS/broker/load/sockets/5min">0.61</elem>
+<elem key="livingroom/speaker">{&quot;id&quot;:15291989500495453678,&quot;gain&quot;:40}</elem>
+<elem key="kitchen/toaster">{&quot;id&quot;:12274942204326656206,&quot;in_use&quot;:true,&quot;temperature&quot;:140.95982,&quot;toast_time&quot;:327}</elem>
+</table>
+</script></port>
+</ports>
+<times srtt="333444" rttvar="252026" to="1341548"/>
+</host>
+<runstats><finished time="1731252602" timestr="Sun Nov 10 23:30:02 2024" summary="Nmap done at Sun Nov 10 23:30:02 2024; 1 IP address (1 host up) scanned in 15.96 seconds" elapsed="15.96" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
