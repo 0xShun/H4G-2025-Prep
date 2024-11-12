@@ -1,23 +1,17 @@
 import java.util.*;
 
-class VaultDoor1 {
+class VaultDoor2 {
     public static void main(String args[]) {
-        VaultDoor1 vaultDoor = new VaultDoor1();
+        VaultDoor2 vaultDoor = new VaultDoor2();
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter vault password: ");
-	    String userInput = scanner.next();
-	    // This line extracts a substring from the userInput string. 
-	    // It starts from the index equal to the length of the prefix "picoCTF{", 
-	    // which is 10 characters long, and goes up to the second-to-last character 
-	    // of userInput (userInput.length() - 1). This effectively removes the 
-	    // "picoCTF{" prefix and the closing '}' from the input, leaving only 
-	    // the core password string.
-	    String input = userInput.substring("picoCTF{".length(), userInput.length() - 1);
-        if (vaultDoor.checkPassword(input)) {
-            System.out.println("Access granted.");
-        } else {
-            System.out.println("Access denied!");
-        }
+	String userInput = scanner.next();
+	String input = userInput.substring("picoCTF{".length(),userInput.length()-1);
+	if (vaultDoor.checkPassword(input)) {
+	    System.out.println("Access granted.");
+	} else {
+	    System.out.println("Access denied!");
+	}
     }
 
     // I came up with a more secure way to check the password without putting
@@ -25,12 +19,7 @@ class VaultDoor1 {
     // UNHACKABLE!! I hope Dr. Evil agrees...
     //
     // -Minion #8728
-    // The password that will pass the checkPassword method is:
-    // picoCTF{d3r5c4lH4r3b_t3Hc4r5_6f5d4}
-    // The password that will pass the checkPassword method is: picoCTF{d3r5c4lH4r3b_t3Hc4r5_6f5d4}
-    // Double checked: The password is correct.
-    // Correct password: picoCTF{d3r5c4lH4r3b_t3Hc4r5_6f5d4}
-    //
+    //d35cr4mbl3_tH3_cH4r4cT3r5_f6daf4
     public boolean checkPassword(String password) {
         return password.length() == 32 &&
                password.charAt(0)  == 'd' &&
